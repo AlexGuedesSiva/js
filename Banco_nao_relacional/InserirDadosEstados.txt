@@ -1,0 +1,16 @@
+db.Estados.insert({nome:"Acre", sigla: 'AC', regiao: "Norte"})
+db.Estados.save({nome:"Alagoas", sigla: 'AL', regiao: "Nordeste", populacao: 322000})
+db.Estados.insert({
+    nome: "Rio de Janeiro",
+    sigla: "RJ",
+    regiao: "Sudeste",
+    cidades: [{
+        nome: "Niteroi",
+        area: 133.9,
+        populacao: 487562
+    }]
+})
+
+db.estados.find()
+db.estados.find().pretty()
+db.help()
